@@ -5,6 +5,7 @@ pkgrel=1
 pkgdesc="Personal userspace installation package - programs + configs"
 arch=('any')
 url=""
+install=${pkgname}.install
 license=('GPL')
 depends=(
     # Part of jur-core
@@ -92,24 +93,40 @@ depends=(
 
     # Applications
     'openbox'
-    'git'
-    'tmux'
-    'firefox'
-    'code'
-    'ttf-fira-code'
-    'xclip'
-    'tint2'
-    'picom'
-    'xcape'
-    'network-manager-applet'
-    'papirus-icon-theme'
-    'rofi'
     'wmctrl'
+    'picom'
+    
+    'tint2'
     'gsimplecal'
-    'light'
+    'network-manager-applet'
+    'pasystray'
+
+    'fuse2'
+    'xcape'
+    'xclip'
     'pulseaudio'
     'pulsemixer'
-    'pasystray'
-    'fuse2'
+    'light'
+
+    'ttf-fira-code'
+    'papirus-icon-theme'
+
+    'git'
+    'tmux'
+    'bash-completion'
+    'xdg-user-dirs'
+    'xdg-utils'
+    'tldr'
+    'firefox'
+    'rofi'
+    'code'
+
+    'zathura'
+    'zathura-djvu'
+    'zathura-pdf-mupdf'
+    'zathura-ps'
 )
 
+source=('arch-logo.svg')
+noextract=('arch-logo.svg')
+sha256sums=('04b546ebdc8a47042f0dcb934a39907b05f1b79da174767ae92ebb9cc3c9ab0c')
