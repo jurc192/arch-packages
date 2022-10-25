@@ -1,11 +1,10 @@
 # Maintainer: Jure Vidmar <vidmarjur@gmail.com>
 pkgname=jur-userspace
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Personal userspace installation package - programs + configs"
 arch=('any')
 url=""
-install=${pkgname}.install
 license=('GPL')
 depends=(
     # Part of jur-core
@@ -95,11 +94,13 @@ depends=(
     'openbox'
     'wmctrl'
     'picom'
+    'lightdm'
     
     'tint2'
     'gsimplecal'
     'network-manager-applet'
     'pasystray'
+    'blueman'
 
     'fuse2'
     'xcape'
@@ -127,6 +128,6 @@ depends=(
     'zathura-ps'
 )
 
-source=('arch-logo.svg')
+source=('https://raw.githubusercontent.com/jurc192/themes/main/Jurandom/arch-logo.svg')
 noextract=('arch-logo.svg')
 sha256sums=('04b546ebdc8a47042f0dcb934a39907b05f1b79da174767ae92ebb9cc3c9ab0c')
