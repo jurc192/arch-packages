@@ -1,10 +1,12 @@
 
 post_install() {
-	install src/arch-logo.svg /usr/share/icons/
+    cd src/
+	install -Dm 644 arch-logo.svg /usr/share/icons/
     echo "Installed arch-logo.svg to /usr/share/icons"
 }
 
 post_upgrade() {
-	install src/arch-logo.svg /usr/share/icons/
+    cd src/
+	install -Dm 644 arch-logo.svg /usr/share/icons/
     echo "Installed arch-logo.svg to /usr/share/icons"
 }
