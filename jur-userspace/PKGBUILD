@@ -1,7 +1,7 @@
 # Maintainer: Jure Vidmar <vidmarjur@gmail.com>
 pkgname=jur-userspace
 pkgver=1
-pkgrel=2
+pkgrel=4
 pkgdesc="Personal userspace installation package - programs + configs"
 arch=('any')
 url=""
@@ -112,7 +112,6 @@ depends=(
     'ttf-fira-code'
     'papirus-icon-theme'
 
-    'git'
     'tmux'
     'bash-completion'
     'xdg-user-dirs'
