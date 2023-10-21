@@ -96,6 +96,7 @@ depends=(
     'picom'
     'lightdm'
     'lightdm-slick-greeter'
+    'yay'
     
     'tint2'
     'gsimplecal'
