@@ -1,7 +1,7 @@
 # Maintainer: Jure Vidmar <vidmarjur@gmail.com>
 pkgname=jur-userspace
 pkgver=1
-pkgrel=6
+pkgrel=5
 pkgdesc="Personal userspace installation package - programs + configs"
 arch=('any')
 url=""
@@ -87,27 +87,22 @@ depends=(
     'xfdesktop'
     'xfwm4'
     'xfwm4-themes'
+
     'xfce4-screenshooter'
 
-    #
     # Applications
-    #
-    
-    # Login manager
-    'lightdm'
-    'lightdm-slick-greeter'
-
-    # Window manager
     'openbox'
     'wmctrl'
     'picom'
+    'lightdm'
+    'lightdm-slick-greeter'
+    'yay'
     
-    # Taskbar + applets
     'tint2'
-    'gsimplecal'             # calendar
+    'gsimplecal'
     'network-manager-applet'
-    'pasystray'             # audio applet
-    'blueman'               # bluetooth applet
+    'pasystray'
+    'blueman'
 
     'fuse2'
     'xcape'
