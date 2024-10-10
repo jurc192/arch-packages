@@ -17,10 +17,8 @@ source=(
 sha256sums=('04b546ebdc8a47042f0dcb934a39907b05f1b79da174767ae92ebb9cc3c9ab0c'
             '42197c8b8ca0a53d3add71818d030bf3c0f47cfa6cb92a1b1ca641ac94b94b3f')
 
-package_jur-desktop() 
+package() 
 {
-    pkgdesc="Desktop core"
-
     # XORG group
     depends=(
         xf86-video-vesa
