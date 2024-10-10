@@ -3,8 +3,9 @@ post_install() {
 }
 
 post_upgrade() {
-    systemctl enable NetworkManager
+
     systemctl enable lightdm
+    systemctl enable NetworkManager
     systemctl enable bluetooth
 
     cd src/

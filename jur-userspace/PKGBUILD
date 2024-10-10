@@ -3,13 +3,19 @@ pkgname=jur-userspace
 pkgver=1
 pkgrel=6
 pkgdesc="Personal userspace configuration packages"
+
 arch=('any')
 url="https://github.com/jurc192/arch-packages"
 license=('GPL')
-source=('https://raw.githubusercontent.com/jurc192/themes/main/Jurandom/arch-logo.svg')
 noextract=('arch-logo.svg')
-sha256sums=('04b546ebdc8a47042f0dcb934a39907b05f1b79da174767ae92ebb9cc3c9ab0c')
 
+source=(
+    'https://raw.githubusercontent.com/jurc192/themes/main/Jurandom/arch-logo.svg'
+    'lightdm.conf'
+    )
+
+sha256sums=('04b546ebdc8a47042f0dcb934a39907b05f1b79da174767ae92ebb9cc3c9ab0c'
+            '42197c8b8ca0a53d3add71818d030bf3c0f47cfa6cb92a1b1ca641ac94b94b3f')
 
 package_jur-desktop() 
 {
@@ -147,4 +153,6 @@ package_jur-desktop()
         xcape
         xclip
     )
+
+    install -Dm0644 lightdm.conf "$pkgdir"/etc/lightdm/lightdm.conf
 }
