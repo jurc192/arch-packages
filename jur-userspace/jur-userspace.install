@@ -1,11 +1,12 @@
-
 post_install() {
-    cd src/
-	install -Dm 644 arch-logo.svg /usr/share/icons/
-    echo "Installed arch-logo.svg to /usr/share/icons"
+    post_upgrade
 }
 
 post_upgrade() {
+    systemctl enable NetworkManager
+    systemctl enable lightdm
+    systemctl enable bluetooth
+
     cd src/
 	install -Dm 644 arch-logo.svg /usr/share/icons/
     echo "Installed arch-logo.svg to /usr/share/icons"
