@@ -156,6 +156,6 @@ package()
     install -Dm0644 lightdm.conf "$pkgdir"/etc/lightdm/lightdm.conf.d/50-jur-lightdm.conf
     echo "Installed lightdm.conf to /etc/lightdm/lightdm.conf.d/"
 
-    install -Dm 644 arch-logo.svg /usr/share/icons/
-    echo "Installed arch-logo.svg to /usr/share/icons"
+    # install -Dm0644 arch-logo.svg /usr/share/icons/arch-logo.svg
+    # echo "Installed arch-logo.svg to /usr/share/icons"
 }
