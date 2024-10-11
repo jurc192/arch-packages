@@ -152,5 +152,5 @@ package()
         xclip
     )
 
-    install -Dm0644 lightdm.conf "$pkgdir"/etc/lightdm/lightdm.conf
+    install -Dm0644 lightdm.conf "$pkgdir"/etc/lightdm/lightdm.conf.d/50-jur-lightdm.conf
 }
