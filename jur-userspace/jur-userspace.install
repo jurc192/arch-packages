@@ -7,8 +7,5 @@ post_upgrade() {
     systemctl enable lightdm
     systemctl enable NetworkManager
     systemctl enable bluetooth
-
-    cd src/
-	install -Dm 644 arch-logo.svg /usr/share/icons/
-    echo "Installed arch-logo.svg to /usr/share/icons"
+    systemctl enable systemd-timesyncd
 }
